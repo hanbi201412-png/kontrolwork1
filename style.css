@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  padding: 0 20px;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 280px auto 140px;
+  text-align: center;
+}
+.main h1 {
+  font-size: 24px;
+  color: rgb(32, 36, 59);
+}
+.main p {
+  max-width: 600px;
+  margin: 15px auto 35px;
+  font-size: 14px;
+  color: rgb(150, 150, 150);
+  line-height: 1.5;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.card {
+  width: 20%;
+  padding: 20px 10px;
+  box-shadow: 0 5px 20px rgb(238, 238, 238);
+  text-align: center;
+}
+.card img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.card p {
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.banner {
+  max-width: 1200px;
+  height: 250px;
+  margin: auto;
+  background: rgb(96, 127, 240);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+}
+
+.text {
+  width: 50%;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+.text h1 {
+  font-size: 30px;
+  font-weight: 300;
+}
+.text p {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.apps {
+  display: flex;
+  gap: 10px;
+}
+.apps img {
+  width: 120px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.phones {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  width: 480px;
+  height: 350px;
+}
+.phones img {
+  position: absolute;
+  object-fit: contain;
+}
+.phones img:first-child {
+  width: 260px;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.phones img:last-child {
+  width: 290px;
+  right: 170px;
+  bottom: -5px;
+  z-index: 2;
+}
+
+@media (max-width: 900px) {
+  .main {
+    margin-top: 150px;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 30%;
+  }
+  .banner {
+    padding: 25px;
+  }
+  .text {
+    width: 45%;
+  }
+  .phones {
+    width: 400px;
+    height: 320px;
+    right: 0;
+  }
+  .phones img:first-child {
+    width: 230px;
+  }
+  .phones img:last-child {
+    width: 250px;
+    right: 140px;
+  }
+}
+@media (max-width: 600px) {
+  .main {
+    margin-top: 80px;
+  }
+  .cards {
+    justify-content: center;
+  }
+  .card {
+    width: 45%;
+  }
+  .banner {
+    height: 450px;
+    padding: 25px;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  .text {
+    width: 100%;
+  }
+  .text h1 {
+    font-size: 24px;
+  }
+  .text p {
+    font-size: 12px;
+  }
+  .phones {
+    width: 370px;
+    height: 270px;
+    right: 0;
+    bottom: 0;
+  }
+  .phones img:first-child {
+    width: 220px;
+  }
+  .phones img:last-child {
+    width: 245px;
+    right: 135px;
+  }
+}
+@media (max-width: 400px) {
+  main {
+    padding: 0 12px;
+  }
+  .card {
+    width: 100%;
+  }
+  .banner {
+    height: 420px;
+  }
+  .phones {
+    width: 340px;
+    height: 250px;
+    right: -10px;
+  }
+  .phones img:first-child {
+    width: 205px;
+  }
+  .phones img:last-child {
+    width: 225px;
+    right: 125px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
